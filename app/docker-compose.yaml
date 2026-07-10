@@ -1,0 +1,13 @@
+
+version: '3.8'
+
+services:
+  webserver:
+    image: nginx:latest
+    container_name: meu-nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/htmls
+    restart: always
+
