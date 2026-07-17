@@ -13,3 +13,5 @@ ENV FLASK_ENV development
 COPY app.py .
 
 CMD [ "flask", "run", "--host", "0.0.0.0" ]
+
+
